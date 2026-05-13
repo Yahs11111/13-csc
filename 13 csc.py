@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import PhotoImage
 
 window = Tk()
 window.geometry("420x420")
@@ -6,12 +7,13 @@ window.title("RANK SCORE")
 
 window.config(background="Pink")
 
-
+image1 = Image.open("goofy.png")
+goofy_image = Image.tk.Photo
 label = Label(window,
-              text="bro",
+              text="RANK SCORE CALCULATOR",
               font=('Arial',40,'bold'),
               fg='White',
-              bg='Pink',)
+              bg = PhotoImage(file="Images\goofy.png",) )
 
 label.pack()
 
@@ -36,6 +38,8 @@ label.config(font=('Monospace',50))
 label.pack()
 button.pack()
 
+
+
+
 entry = Entry()
 window.mainloop()
-
